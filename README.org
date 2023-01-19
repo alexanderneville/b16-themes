@@ -1,0 +1,3 @@
+#+TITLE: My Theme Collection
+
+A small collection of my preferred 16 colour themes. These themes conform to the semantics of /base16/, a relatively informal community project to standardise the use of colours across related applications. More information can be found in the [[https://github.com/tinted-theming/home][tinted-theming/home]] and [[https://github.com/chriskempson/base16][chriskempson/base16]] repositories. A much larger selection of similar themes can be found in the [[https://github.com/tinted-theming/base16-schemes][tinted-theming/base16-schemes]] repository. I maintain my own set of shell scripts for writing themes in this format to all of the configuration files they apply to.
