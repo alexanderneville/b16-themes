@@ -1,6 +1,6 @@
 #+TITLE: My Theme Collection
 
-A small collection of my preferred 16 colour themes. These themes conform to the semantics of /base16/, a relatively informal community project to standardise the use of colours across related applications. More information can be found in the [[https://github.com/tinted-theming/home][tinted-theming/home]] and [[https://github.com/chriskempson/base16][chriskempson/base16]] documentation. A much larger selection of themes can be found in the [[https://github.com/tinted-theming/base16-schemes][tinted-theming/base16-schemes]] repository.
+A small collection of my preferred 16 colour themes. These themes conform to the semantics of /base16/, a relatively informal community project to standardise the use of colours across related applications. More information can be found in the [[https://github.com/tinted-theming/home][tinted-theming/home]] and [[https://github.com/chriskempson/base16][chriskempson/base16]] documentation. A much larger selection of themes can be found in the [[https://github.com/tinted-theming/base16-schemes][this]] repository.
 
 A theme in this format has 16 colors, split into 8 shades and 8 tones. The set of 8 colours is enough for syntax highlighting in most cases, without the need for bright colours. The remaining 8 colours can be used for user interface elements such as status lines, gutters and menus.
 
