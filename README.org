@@ -1,3 +1,25 @@
 #+TITLE: My Theme Collection
 
-A small collection of my preferred 16 colour themes. These themes conform to the semantics of /base16/, a relatively informal community project to standardise the use of colours across related applications. More information can be found in the [[https://github.com/tinted-theming/home][tinted-theming/home]] and [[https://github.com/chriskempson/base16][chriskempson/base16]] repositories. A much larger selection of similar themes can be found in the [[https://github.com/tinted-theming/base16-schemes][tinted-theming/base16-schemes]] repository. I maintain my own set of shell scripts for writing themes in this format to all of the configuration files they apply to.
+A small collection of my preferred 16 colour themes. These themes conform to the semantics of /base16/, a relatively informal community project to standardise the use of colours across related applications. More information can be found in the [[https://github.com/tinted-theming/home][tinted-theming/home]] and [[https://github.com/chriskempson/base16][chriskempson/base16]] documentation. A much larger selection of themes can be found in the [[https://github.com/tinted-theming/base16-schemes][tinted-theming/base16-schemes]] repository.
+
+* Themes
+
+- Gruvbox Dark Hard:
+[[./screenshots/gruv.png]]
+- Gruvbox Material Dark Hard:
+[[./screenshots/gruv_material.png]]
+- VS**** dark:
+[[./screenshots/codedark.png]]
+- Atom One Dark:
+[[./screenshots/onedark.png]]
+
+* Install
+
+Included is a script to write the yaml formatted themes to /Xresources/ format and generate a set of shell scripts which can change the ANSI escape sequences of your shell, effective for all terminal emulators, inluding Linux TTY!
+
+#+begin_src sh
+git clone https://github.com/alexanderneville/b16-themes.git
+cd b16-themes
+chmod u+x export_themes.sh
+./export_themes.sh -i themes/ -o ./
+#+end_src
