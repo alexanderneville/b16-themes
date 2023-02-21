@@ -2,7 +2,7 @@
 
 A small collection of my preferred 16 colour themes. These themes conform to the semantics of /base16/, a relatively informal community project to standardise the use of colours across related applications. More information can be found in the [[https://github.com/chriskempson/base16][original]] and [[https://github.com/tinted-theming/home][community]] /base16/ documentation. A much larger selection of themes can be found in [[https://github.com/tinted-theming/base16-schemes][this]] repository.
 
-A theme in this format has 16 colours, split into 8 shades and 8 colours. The set of 8 colours is enough for syntax highlighting in most cases, without the need for bright colours. The remaining 8 colours can be used to control the display of user interface elements such as status lines, gutters, line numbers and menus, which is much more useful.
+A theme in this format has 16 colours, split into 8 shades and 8 colours. The set of 8 colours is enough for syntax highlighting in most cases, without the need for any bright colours. The remaining 8 colours can be used to control the display of user interface elements such as status lines, gutters, line numbers and menus, which is much more useful.
 
 * Examples
 
@@ -19,11 +19,11 @@ Here are some of my favourite schemes:
 
 * Install
 
-Included is a script to write the yaml formatted themes to /Xresources/ format and generate a set of shell scripts which can change the ANSI escape sequences of your shell, effective for all terminal emulators, including Linux TTY!
+Included is a script to write the YAML formatted themes to /Xresources/ format and generate a set of shell scripts which can change the true-colour RGB mapping of the ANSI escape sequences of your shell, effective across all terminal emulators. The script additionally generates a set of CSS style sheets for use on the web.
 
 #+begin_src sh
 git clone https://github.com/alexanderneville/b16-themes.git
 cd b16-themes
 chmod u+x export_themes.sh
-./export_themes.sh -i themes/ -o ./
+./export_themes.sh -i themes/ -o ./out
 #+end_src

@@ -92,6 +92,27 @@ b16_shell() {
     echo "put_template 21 $(add_slashes ${theme[6]})"
 }
 
+b16_css() {
+    echo ":root {"
+    echo "  --colour-00: #${theme[0]};"
+    echo "  --colour-01: #${theme[1]};"
+    echo "  --colour-02: #${theme[2]};"
+    echo "  --colour-03: #${theme[3]};"
+    echo "  --colour-04: #${theme[4]};"
+    echo "  --colour-05: #${theme[5]};"
+    echo "  --colour-06: #${theme[6]};"
+    echo "  --colour-07: #${theme[7]};"
+    echo "  --colour-08: #${theme[8]};"
+    echo "  --colour-09: #${theme[9]};"
+    echo "  --colour-10: #${theme[10]};"
+    echo "  --colour-11: #${theme[11]};"
+    echo "  --colour-12: #${theme[12]};"
+    echo "  --colour-13: #${theme[13]};"
+    echo "  --colour-14: #${theme[14]};"
+    echo "  --colour-15: #${theme[15]};"
+    echo "}"
+}
+
 main() {
     for f in ${1}/*.yaml
     do
@@ -103,6 +124,7 @@ main() {
         done
         b16_shell > ${out}/shell/${n}.sh &
         b16_xresources > ${out}/xresources/${n} &
+        b16_css > ${out}/css/${n}.css &
     done
     wait
 }
@@ -135,4 +157,5 @@ in=${in%/}
 
 mkdir -p "${out}"/xresources
 mkdir -p "${out}"/shell
+mkdir -p "${out}"/css
 main $in $out
